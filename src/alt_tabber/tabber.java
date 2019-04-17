@@ -6,14 +6,16 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.AWTException;
 import java.awt.Robot;
+import javax.swing.*;
 
-public class tabber implements KeyListener{
+public class tabber extends JFrame implements KeyListener{
 	
 	public Robot r;
+	private JLabel text;
 	
 	public static void main(String[] args) throws Exception{
-		
-		Robot r = new Robot();
+		this.text = JLablel("bob");
+		Robot r = new Robot()	;
 		
 		Thread.sleep(10000);
 		/*
