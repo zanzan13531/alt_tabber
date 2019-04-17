@@ -7,11 +7,15 @@ import java.awt.event.KeyListener;
 import java.awt.AWTException;
 import java.awt.Robot;
 
-public class tabber {
+public class tabber implements KeyListener{
+	
+	public Robot r;
 	
 	public static void main(String[] args) throws Exception{
 		
 		Robot r = new Robot();
+		
+		Thread.sleep(10000);
 		/*
 		if (arg0.getKeyCode() == KeyEvent.VK_1) {
 			System.out.println("You pressed '1'.");
@@ -28,15 +32,40 @@ public class tabber {
 	}
 	
 	@Override
-    public void keyPressed(KeyEvent e) {
+    public void keyPressed(KeyEvent e){
 
-        if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            System.out.println("Right key pressed");
-        }
-        if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-            System.out.println("Left key pressed");
+        if (e.getKeyCode() == KeyEvent.VK_1) {
+        	System.out.print("hi");
+            r.keyPress(KeyEvent.VK_ALT);
+    		try {
+				Thread.sleep(100);
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+    		r.keyPress(KeyEvent.VK_TAB);
+    		try {
+				Thread.sleep(100);
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+    		r.keyRelease(KeyEvent.VK_TAB);
+    		r.keyRelease(KeyEvent.VK_ALT);
         }
 
     }
+
+	@Override
+	public void keyReleased(KeyEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyTyped(KeyEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
