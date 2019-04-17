@@ -14,11 +14,22 @@ public class UI extends JFrame implements KeyListener {
 
 	private tabber t;
 	private JLabel text;
+	private JButton startButton;
 
 	public UI() throws Exception {
 
 		tabber t = new tabber();
-
+		
+		this.startButton = new JButton("Alt-Tab"); //making the start button
+		this.startButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) { //actions when pressing the start button
+				t.run(); //starts the program
+			}
+		});
+		this.startButton.setVisible(true);
+		this.add(startButton, BorderLayout.NORTH); //places button
+		this.startButton.setVisible(true);
+		
 		this.text = new JLabel("Alt-Tabber");
 		this.text.setFont(new Font("Consolas", Font.PLAIN, 48)); // text stuff
 		this.add(this.text, BorderLayout.CENTER);
@@ -26,14 +37,8 @@ public class UI extends JFrame implements KeyListener {
 																// closed
 		setSize(400, 300); // sets a size
 		this.setVisible(true);
-		/*
-		 * if (arg0.getKeyCode() == KeyEvent.VK_1) {
-		 * System.out.println("You pressed '1'."); r.keyPress(KeyEvent.VK_1);
-		 * Thread.sleep(100); r.keyRelease(KeyEvent.VK_1); Thread.sleep(500);
-		 * 
-		 * 
-		 * }
-		 */
+		
+		
 
 	}
 
