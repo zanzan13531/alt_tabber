@@ -8,8 +8,6 @@ import org.jnativehook.NativeHookException;
 import org.jnativehook.keyboard.NativeKeyEvent;
 import org.jnativehook.keyboard.NativeKeyListener;
 
-// hello
-
 public class tabber implements Runnable, NativeKeyListener {
 
 	private Robot r;
