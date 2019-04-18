@@ -42,6 +42,7 @@ public class alternate_tabber_test implements NativeKeyListener {
 	}
 
 	public static void main(String[] args) {
+		
 		try {
 			GlobalScreen.registerNativeHook();
 		}
@@ -51,6 +52,7 @@ public class alternate_tabber_test implements NativeKeyListener {
 
 			System.exit(1);
 		}
+		
 
 		GlobalScreen.addNativeKeyListener(new alternate_tabber_test());
 	}
