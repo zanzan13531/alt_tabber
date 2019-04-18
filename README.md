@@ -1,11 +1,11 @@
 # alt_tabber
 
 Running the program:
-Run the program called "alternate_tabber_test"
-Press the little black down arrow next to the green/white arrow button (run button)
-Select Run As -> Java Application
+1. Run the program called "alternate_tabber_test"
+2. Press the little black down arrow next to the green/white arrow button (run button)
+3. Select Run As -> Java Application
 
-It is currently set to z to alt-tab
+It is currently set to "z" to alt-tab
 
 Setup in Eclipse:
 1. Open Eclipse
