@@ -1,8 +1,8 @@
 # alt_tabber
 
 Running the program:
-1. Run the program called "alternate_tabber_test"
-2. Press the little black down arrow next to the green/white arrow button (run button)
+1. Open the program called "alternate_tabber_test"
+2. At the top bar, press the little black down arrow next to the green/white arrow button (run button)
 3. Select Run As -> Java Application
 
 It is currently set to "z" to alt-tab
