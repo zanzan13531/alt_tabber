@@ -19,7 +19,7 @@ public class alternate_tabber_test implements NativeKeyListener {
 				r.keyPress(KeyEvent.VK_ALT);
 				r.keyPress(KeyEvent.VK_TAB);
 				try {
-					Thread.sleep(100);
+					Thread.sleep(50);
 				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
