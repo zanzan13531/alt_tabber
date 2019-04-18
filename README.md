@@ -17,3 +17,11 @@ Setup in Eclipse:
 7. The two spaces below it should auto-fill
 8. Then just keep pressing next, and once you can, press finish
 9. You are ready to run it.
+
+Ignore all the rest of the files, but if you must know:
+Main.java - The main runnable file (runs the UI)
+UI.java - A UI that I'm going to keep working 
+tabber.java - The original alt-tabber program, it might still work
+globalListenerTest - The original global key listener example that I used
+
+This project uses the JNativeHook library: https://github.com/kwhat/jnativehook
