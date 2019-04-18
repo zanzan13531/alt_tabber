@@ -11,25 +11,26 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 
 public class alternate_tabber_test implements NativeKeyListener {
+	
+	private Robot r;
+	
+	public alternate_tabber_test() throws Exception {
+		this.r = new Robot();
+	}
+	
 	public void nativeKeyPressed(NativeKeyEvent e) {
 
 		if (e.getKeyCode() == NativeKeyEvent.VC_Z) {
-			try {
-				Robot r = new Robot();
-				r.keyPress(KeyEvent.VK_ALT);
-				r.keyPress(KeyEvent.VK_TAB);
+				this.r.keyPress(KeyEvent.VK_ALT);
+				this.r.keyPress(KeyEvent.VK_TAB);
 				try {
 					Thread.sleep(50);
 				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-				r.keyRelease(KeyEvent.VK_TAB);
-				r.keyRelease(KeyEvent.VK_ALT);
-			} catch (AWTException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
+				this.r.keyRelease(KeyEvent.VK_TAB);
+				this.r.keyRelease(KeyEvent.VK_ALT);
 		}
 	}
 
@@ -41,7 +42,7 @@ public class alternate_tabber_test implements NativeKeyListener {
 		
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		try {
 			GlobalScreen.registerNativeHook();
