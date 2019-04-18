@@ -14,6 +14,7 @@ public class alternate_tabber_test implements NativeKeyListener {
 	
 	public alternate_tabber_test() throws Exception {
 		this.r = new Robot();
+		KeyEvent.getExtendedKeyCodeForChar('z');
 	}
 	
 	public void nativeKeyPressed(NativeKeyEvent e) {
