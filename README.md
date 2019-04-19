@@ -6,9 +6,9 @@ Running the program:
 3. Select Run As -> Java Application
 
 Keys: 
--1 for alt-tab
--2 for ctrl-windows-left (switch to left window)
--3 for ctrl-windows-right (switch to right window)
+- 1 for alt-tab
+- 2 for ctrl-windows-left (switch to left window)
+- 3 for ctrl-windows-right (switch to right window)
 
 Setup in Eclipse:
 1. Open Eclipse
